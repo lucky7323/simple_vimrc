@@ -31,6 +31,12 @@ augroup numbertoggle
     autocmd BufLeave,FocusLost,InsertEnter * set nornu
 augroup END
 
+" 중괄호 사용하는 언어들을 위한 키보드 매핑
+inoremap { {}<Left>
+inoremap {<CR> {<CR>}<Esc>O
+inoremap {{ {
+inoremap {} {}
+
 " << vim 참고기능들 >>
 " (1) register 이용한 yank
 " ex)
