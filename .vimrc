@@ -1,3 +1,5 @@
+set paste
+
 " 현재 커서 표시
 set cursorline
 
