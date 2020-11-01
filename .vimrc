@@ -1,3 +1,4 @@
+" 붙여넣기 계단현상 제거
 set paste
 
 " 현재 커서 표시
@@ -38,6 +39,9 @@ inoremap { {}<Left>
 inoremap {<CR> {<CR>}<Esc>O
 inoremap {{ {
 inoremap {} {}
+
+" Insert Mode 에서 Shift-Tab 사용(Ctrl+d)
+inoremap <S-Tab> <C-d>
 
 " << vim 참고기능들 >>
 " (1) register 이용한 yank
