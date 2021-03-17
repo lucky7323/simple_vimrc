@@ -21,8 +21,40 @@ set backspace=indent,eol,start
 " 검색 하이라이팅
 set hls
 
-" 시스템 클립보드 사용하기
+" 검색 dynamically highligting
+set incsearch
+
+" 검색 대소문자 무시
+set ignorecase
+
+" OS 시스템 클립보드 사용하기
 set cb=unnamed
+
+" wildcards ignore
+set wildignore=*.swp,*.swo,*.class
+
+" Folding (zc & zo)
+set foldenable
+set foldmethod=indent
+set foldlevel=99
+set foldopen-=search
+set foldopen-=undo
+
+" Mouse Functions
+set mouse=a
+set mousehide
+
+" Timeout Delay 변경 (default: 1000ms)
+set timeoutlen=250
+
+" tab pannel 활성화
+set showtabline=2
+
+" show command typing
+set showcmd
+
+" 괄호 매칭 하이라이팅
+set showmatch
 
 " relative line number 를 이용해 해당 위치로 한번에 이동 가능 (insert 중에는 비활성)
 augroup numbertoggle
